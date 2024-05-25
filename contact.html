@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - The Royals Movers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="The Royals Movers Logo">
+        </div>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="terms.html">Terms</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section" id="contact">
+            <h1>Contact</h1>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="a9491180-456a-4ca3-ad96-38cd8617dfd9" />
+                <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+                <input type="hidden" name="from_name" value="My Website" />
+
+                <div class="input-container">
+                    <!-- Section -1: Client's Detail Information -->
+                    <div class="section">
+                        <div class="input">
+                            <label for="client_name">Full Name:</label>
+                            <input type="text" id="client_name" name="client_name" required>
+                        </div>
+                        <div class="input">
+                            <label for="phone_number">Phone Number:</label>
+                            <input type="tel" id="phone_number" name="phone_number" required>
+                        </div>
+                        <div class="input">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input">
+                            <label for="move_date_time">Preferred date and time of the move:</label>
+                            <input type="datetime-local" id="move_date_time" name="move_date_time" required>
+                        </div>
+                        <div class="input-textarea">
+                            <label for="additional_info">Any additional information about the move?</label>
+                            <textarea id="additional_info" name="additional_info" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <!-- Section Zero: How many 3.5t Luton Vans? -->
+                    <div class="section">
+                        <div class="section-title">How many 3.5t Luton Vans?</div>
+                        <div class="input">
+                            <select id="num_of_vans" name="num_of_vans">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- First Section: Collection Full Address -->
+                    <div class="section">
+                        <div class="section-title">Collection Full Address</div>
+                        <div class="input">
+                            <label for="collection_street">Street Address</label>
+                            <input type="text" id="collection_street" name="collection_street" required>
+                        </div>
+                        <div class="input">
+                            <label for="collection_city">City</label>
+                            <input type="text" id="collection_city" name="collection_city" required>
+                            <label for="collection_postcode">Postcode</label>
+                            <input type="text" id="collection_postcode" name="collection_postcode" required>
+                        </div>
+                    </div>
+                    <!-- Second Section: Delivery Full Address -->
+                    <div class="section">
+                        <div class="section-title">Delivery Full Address</div>
+                        <div class="input-group">
+                            <label for="delivery_street">Street Address:</label>
+                            <input type="text" id="delivery_street" name="delivery_street" required>
+                        </div>
+                        <div class="input-group-address">
+                            <label for="delivery_city">City:</label>
+                            <input type="text" id="delivery_city" name="delivery_city" required>
+                            <label for="delivery_postcode">Postcode:</label>
+                            <input type="text" id="delivery_postcode" name="delivery_postcode" required>
+                        </div>
+                    </div>
+                    <!-- Third Section: Number of Men -->
+                    <div class="section">
+                        <div class="section-title">How many men would you prefer to come?</div>
+                        <div class="inp-group">
+                            <select id="num_of_men" name="num_of_men" required>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Fourth Section: Total Miles -->
+                    <div class="section">
+                        <div class="section-title">How many Miles total?</div>
+                        <div class="input-group">
+                            <input type="number" id="total_miles" name="total_miles" required>
+                        </div>
+                    </div>
+                    <!-- Fifth Section: Total Stairs -->
+                    <div class="section">
+                        <div class="section-title">What is the total flights of stairs involved in your move with both addresses?</div>
+                        <div class="input-group">
+                            <input type="number" id="total_stairs" name="total_stairs" required>
+                        </div>
+                    </div>
+
+                    <!-- Sixth Section: Hours Needed -->
+                    <div class="section">
+                        <div class="section-title">How many hours would you need our service?</div>
+                        <div class="input-group">
+                            <input type="number" id="hours_needed" name="hours_needed" step="0.5" required>
+                        </div>
+                    </div>
+
+                    <!-- Seventh Section: Additional Service -->
+                    <div class="section">
+                        <div class="section-title">Would you like to opt for an additional service of complete Package and move?</div>
+                        <div class="input-group">
+                            <select id="additional_service" name="additional_service" required>
+                                <option value="No">No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Eighth Section: Congestion Zone -->
+                    <div class="section">
+                        <div class="section-title">Is any of the addresses part of the congestion zone?</div>
+                        <div class="input-group">
+                            <select id="congestion_zone" name="congestion_zone" required>
+                                <option value="No">No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button class="form-submit" type="submit" id="previewButton">Submit Contact Details</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <section class="contact-info" id="contact-info">
+            <h2>Contact Information</h2>
+            <p>The Right Way To Move</p>
+            <p>Long-Distance Moving - Office Relocation - Residential Move - Commercial Transfer</p>
+            <p>Phone: (+44) 07518 836720</p>
+            <p>Email: <a href="mailto:info@theroyalsmovers.com">info@theroyalsmovers.com</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 The Royals Movers. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
