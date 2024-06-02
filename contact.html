@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - The Royals Movers</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -28,11 +48,9 @@
         <section class="contact-section" id="contact">
             <h1>Contact</h1>
             <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-
                 <input type="hidden" name="access_key" value="a9491180-456a-4ca3-ad96-38cd8617dfd9" />
                 <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
                 <input type="hidden" name="from_name" value="My Website" />
-
                 <div class="input-container">
                     <!-- Section -1: Client's Detail Information -->
                     <div class="section">
@@ -75,7 +93,7 @@
                             <label for="collection_street">Street Address</label>
                             <input type="text" id="collection_street" name="collection_street" required>
                         </div>
-                        <div class="input">
+                        <div class="input-group-address">
                             <label for="collection_city">City</label>
                             <input type="text" id="collection_city" name="collection_city" required>
                             <label for="collection_postcode">Postcode</label>
@@ -85,7 +103,7 @@
                     <!-- Second Section: Delivery Full Address -->
                     <div class="section">
                         <div class="section-title">Delivery Full Address</div>
-                        <div class="input-group">
+                        <div class="input">
                             <label for="delivery_street">Street Address:</label>
                             <input type="text" id="delivery_street" name="delivery_street" required>
                         </div>
@@ -118,12 +136,12 @@
                     </div>
                     <!-- Fifth Section: Total Stairs -->
                     <div class="section">
-                        <div class="section-title">What is the total flights of stairs involved in your move with both addresses?</div>
+                        <div class="section-title">What is the total flights of stairs involved in your move with both
+                            addresses?</div>
                         <div class="input-group">
                             <input type="number" id="total_stairs" name="total_stairs" required>
                         </div>
                     </div>
-
                     <!-- Sixth Section: Hours Needed -->
                     <div class="section">
                         <div class="section-title">How many hours would you need our service?</div>
@@ -131,10 +149,10 @@
                             <input type="number" id="hours_needed" name="hours_needed" step="0.5" required>
                         </div>
                     </div>
-
                     <!-- Seventh Section: Additional Service -->
                     <div class="section">
-                        <div class="section-title">Would you like to opt for an additional service of complete Package and move?</div>
+                        <div class="section-title">Would you like to opt for an additional service of complete Package
+                            and move?</div>
                         <div class="input-group">
                             <select id="additional_service" name="additional_service" required>
                                 <option value="No">No</option>
@@ -142,7 +160,6 @@
                             </select>
                         </div>
                     </div>
-
                     <!-- Eighth Section: Congestion Zone -->
                     <div class="section">
                         <div class="section-title">Is any of the addresses part of the congestion zone?</div>
@@ -172,4 +189,5 @@
     </footer>
     <script src="scripts.js"></script>
 </body>
+
 </html>
